@@ -32,13 +32,13 @@
         "password" is the "client_secret" defined above.
         "tenant" is the "tenant_id" defined above.
     - 4. We will use the above information to set and "$ENV" in our code and pass them.
-         # sh
-            export ARM_CLIENT_ID="00000000-0000-0000-0000-000000000000"
+        # sh
+         plain   export ARM_CLIENT_ID="00000000-0000-0000-0000-000000000000"
             export ARM_CLIENT_SECRET="12345678-0000-0000-0000-000000000000"
             export ARM_TENANT_ID="10000000-0000-0000-0000-000000000000"
             export ARM_SUBSCRIPTION_ID="20000000-0000-0000-0000-000000000000"
         # PowerShell
-            $env:ARM_CLIENT_ID = "00000000-0000-0000-0000-000000000000"
+         plain   $env:ARM_CLIENT_ID = "00000000-0000-0000-0000-000000000000"
             $env:ARM_CLIENT_SECRET = "12345678-0000-0000-0000-000000000000"
             $env:ARM_TENANT_ID = "10000000-0000-0000-0000-000000000000"
             $env:ARM_SUBSCRIPTION_ID = "20000000-0000-0000-0000-000000000000"
