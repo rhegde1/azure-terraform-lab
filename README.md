@@ -9,7 +9,7 @@
 - On MacBook you can use "Brew" packet manager [Brew Install](https://docs.brew.sh/Installation)
 - On windows you can use "chocolatey" packet manager [choco install](https://chocolatey.org/install)
 - if you want to use "bash shell" on windows system then you will need to 
-    - enable "wsl' from add/remove feature (not available on all windows version)   OR
+    - enable "wsl' from add/remove feature (not available on all windows version)   **OR**
     - install "git for windows", which will install bash for you.
 
 ## Configuring Azure to authenticate via terraform
@@ -18,8 +18,8 @@
 - We will be doing it via cli
  1. az login
  2. az account list (you will want to take note of Subscription ID). 
- If you have multiple subscription then set the desired susbscription id (az account set --subscription="20000000-0000-0000-0000-000000000000") - Replace with Subscription ID
-3. az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/20000000-0000-0000-0000-000000000000" - Replace with Subscription ID
+ If you have multiple subscription then set the desired susbscription id (az account set --subscription="20000000-0000-0000-0000-000000000000") **Replace with Subscription ID**
+3. az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/20000000-0000-0000-0000-000000000000" **Replace with Subscription ID**
 - it will generate an output like below:
 "appId": "00000000-0000-0000-0000-000000000000",
 "displayName": "azure-cli-2017-06-05-10-41-15",
@@ -41,3 +41,10 @@
 - $env:ARM_CLIENT_SECRET = "12345678-0000-0000-0000-000000000000"
 - $env:ARM_TENANT_ID = "10000000-0000-0000-0000-000000000000"
 - $env:ARM_SUBSCRIPTION_ID = "20000000-0000-0000-0000-000000000000"
+
+## Creating Terraform configuration
+- Once above steps are completed, we will now start building our Terraform Code [(tf code)]
+- [clone this repo](gh repo clone rhegde1/azure-terraform-lab)
+
+### Understanding folder Struture
+- azure-terraform-lab has child folder "get-started-tf-on-azure"
