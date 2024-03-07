@@ -44,7 +44,7 @@
 
 ## Creating Terraform configuration
 - Once above steps are completed, we will now start building our Terraform Code [(tf code)]
-- [clone this repo](gh repo clone rhegde1/azure-terraform-lab)
+- Now [clone this repo](https://github.com/rhegde1/azure-terraform-lab)
 
 ### Understanding folder Struture
 - azure-terraform-lab has child folder "get-started-tf-on-azure"
