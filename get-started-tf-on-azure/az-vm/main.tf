@@ -1,10 +1,10 @@
 # Create public IPs
-resource "azurerm_public_ip" "acs_tf_demo_public_ip" {
-  name                = "${random_pet.prefix.id}-public-ip"
-  location            = data.azurerm_resource_group.acs_demo_rg.location
-  resource_group_name = data.azurerm_resource_group.acs_demo_rg.name
-  allocation_method   = "Dynamic"
-}
+# resource "azurerm_public_ip" "acs_tf_demo_public_ip" {
+#   name                = "${random_pet.prefix.id}-public-ip"
+#   location            = data.azurerm_resource_group.acs_demo_rg.location
+#   resource_group_name = data.azurerm_resource_group.acs_demo_rg.name
+#   allocation_method   = "Dynamic"
+# }
 
 # # Create Network Security rules and assign to existing NSG
 # resource "azurerm_network_security_rule" "acs_demo_rdp_rule" {
