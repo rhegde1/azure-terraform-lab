@@ -1,6 +1,6 @@
 # Create ci.yaml file with your workflow content
 # Replace the content with your actual workflow definition
-"name: Azure Terraform CI/CD
+name: Azure Terraform CI/CD
 
 on:
   push:
