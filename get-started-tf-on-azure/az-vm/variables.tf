@@ -9,26 +9,26 @@ variable "prefix" {
   description = "Prefix of the resource name"
 }
 
-variable "ARM_CLIENT_ID" {
-  description = "The Client ID of the Service Principal"
-  type        = string
-  sensitive   = true
-}
+# variable "ARM_CLIENT_ID" {
+#   description = "The Client ID of the Service Principal"
+#   type        = string
+#   sensitive   = true
+# }
 
-variable "ARM_SUBSCRIPTION_ID" {
-  description = "The Subscription ID of the Service Principal"
-  type        = string
-  sensitive   = true
-}
+# variable "ARM_SUBSCRIPTION_ID" {
+#   description = "The Subscription ID of the Service Principal"
+#   type        = string
+#   sensitive   = true
+# }
 
-variable "ARM_TENANT_ID" {
-  description = "The Tenant ID of the Service Principal"
-  type        = string
-  sensitive   = true
-}
+# variable "ARM_TENANT_ID" {
+#   description = "The Tenant ID of the Service Principal"
+#   type        = string
+#   sensitive   = true
+# }
 
-variable "ARM_SECRET_ID" {
-  description = "The secret ID of the Service Principal"
-  type        = string
-  sensitive   = true
-}
+# variable "ARM_SECRET_ID" {
+#   description = "The secret ID of the Service Principal"
+#   type        = string
+#   sensitive   = true
+# }
