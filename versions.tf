@@ -13,6 +13,7 @@ terraform {
     storage_account_name = "acsdemotfstatefile"
     container_name       = "acsdemotfstatecontainer"
     key                  = "terraform.tfstate"
+    access_key           = "${{secrets.AZURE_STORAGE_ACCESS_KEY}}"
   }
 }
 
